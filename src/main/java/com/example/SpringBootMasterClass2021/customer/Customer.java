@@ -1,6 +1,5 @@
 package com.example.SpringBootMasterClass2021.customer;
 
-@
 public class Customer {
     private Long id;
     private String name;

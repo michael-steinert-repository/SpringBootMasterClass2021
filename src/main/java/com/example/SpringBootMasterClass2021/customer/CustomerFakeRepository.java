@@ -1,15 +1,16 @@
 package com.example.SpringBootMasterClass2021.customer;
 
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 
 @Repository
-public class CustomerRepository implements CustomerRepo {
+public class CustomerFakeRepository implements CustomerRepo {
     @Override
     public List<Customer> getCustomers() {
-        return Collections.emptyList();
+        return Arrays.asList(
+                new Customer(1L, "Michael"),
+                new Customer(2L, "Marie"));
     }
 }
